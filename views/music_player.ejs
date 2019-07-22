@@ -1,0 +1,34 @@
+<div class="breadcumb-area single-podcast-breadcumb bg-img bg-overlay" style="background-image: url(img/bg-img/2.jpg);">
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8"> 
+         <!-- Music Area -->
+          <div class="poca-music-area style-2 bg-transparent mb-0">
+            <div class="poca-music-content text-center">
+               <!-- Music Player -->
+              <div class="poca-music-player style-2">
+                <audio 
+                                id="player"
+                                class="player"
+                                controls
+                                autoplay
+                                src="{{ url }}">
+                </audio>
+              </div>
+              <span class="poca-music-thumbnail">
+                <img src="{{ favicon }}" />
+              </span>
+              <h2 class="text-danger">{{ name }}</h2>
+              <div class="music-meta-data">
+                <p class="text-warning">Tags  |<a href="#" class="music-author text-white">{{ tags }}</a> |</p>
+              </div>
+              <!-- Likes, Share & Download -->
+              <div class="likes-share-download d-flex align-items-center justify-content-between">
+                <a href="#"><i class="fa fa-heart gray-red" aria-hidden="true"></i> Like ({{ votes }})</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</div>

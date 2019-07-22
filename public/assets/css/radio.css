@@ -1,0 +1,21 @@
+.dark-back {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.gray-red {
+    color: #a94442;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.window-height {
+    max-height: 530px;
+    overflow: hidden;
+}
+
+.stations {
+    overflow-y: auto;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "jukebox",
+  "version": "1.0.0",
+  "description": "Cloud Based radio streaming service",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "bitbucket.org/arthurkay/radio.git"
+  },
+  "keywords": [
+    "Radio",
+    "Streaming",
+    "Streamer",
+    "Stream",
+    "Music",
+    "Shows",
+    "Entertainment"
+  ],
+  "author": "Arthur Kalikiti",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}

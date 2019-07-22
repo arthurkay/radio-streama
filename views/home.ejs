@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" ng-app="radio">
+
+<head>
+
+    <title>{{ title }} | Cloud Radio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/radio.css" />
+    <script type="text/javascript" src="assets/js/angular.min.js"> </script>
+    <script type="text/javascript" src="assets/js/angular-route.min.js"> </script>
+
+</head>
+
+<body>
+    <div class="container-fluid dark-back">
+
+        <section>
+            <div class="row col-md-12">
+                <h1 class="text-center gray-red">Cloud Radio</h1>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <div class="window-height" ng-view></div>
+           
+                </div>
+                
+                <div class="col-md-8 text-right stations gray-red" ng-controller="stationsCtrl">
+
+                    <h3 class="radio-stations white"> Radio Stations </h3>
+                    
+                    <h4 class="white"> ZAMBIA</h4>
+                    <ul>
+                        <li ng-repeat="x in stations"> 
+                        <a href="#!/station/{{ x.stationuuid }}" class="gray-red">{{ x.name }}</a> 
+                        </li>
+                    </ul>
+                    
+                    <h4 class="white">All Radio Stations</h4>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" ng-model="search" class="form-control" placeholder="searching for something?" />
+                        </div>
+                    </form>
+                    <table>
+                    <tr>
+                        <th> Name </th>
+                        <th> Tags </th>
+                        <th> Country </th>
+                        <th> Votes </th>
+                        <th> Favourite </th>
+                    </tr>
+                    <tr dir-paginate="x in stationsAll|filter:search|itemsPerPage:10"> 
+                        <td><a href="#!/station/{{ x.stationuuid }}" class="white">{{ x.name }}</a></td>
+                        <td>{{ x.tags }}</td>
+                        <td>{{ x.country }}</td>
+                        <td>{{ x.votes }}</td>
+                        <td><a href="" ng-click="fav(x.stationuuid)"><i class="fa fa-star"></i></a></td>
+                    </tr>
+                    </table>
+
+                    <dir-pagination-controls
+                    max-size="5"
+                    direction-links="true"
+                    boundary-links="true" >
+                    </dir-pagination-controls>
+
+                </div>
+                
+            </div>
+    
+        </section>
+
+    </div>
+
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"> </script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/app.js"> </script>
+<script type="text/javascript" src="assets/js/dirPagination.js"></script>
+  <!-- Popper js -->
+<script src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+  <!-- All js -->
+<script src="assets/js/poca.bundle.js"></script>
+  <!-- Active js -->
+<script src="assets/js/active.js"></script>
+</body>
+
+</html>

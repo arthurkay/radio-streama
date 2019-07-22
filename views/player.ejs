@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Poca - Podcast &amp; Audio Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon -->
+  <link rel="icon" href="./img/core-img/favicon.ico">
+  <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title ng-controller="stationSelectorCtrl">{{ title }} | Cloud Radio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+    <script type="text/javascript" src="assets/js/angular.min.js"> </script>
+    <script type="text/javascript" src="assets/js/angular-route.min.js"> </script>
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-thumbnail">
+      <img src="assets/img/preloader.png" alt="">
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="pocaNav">
+
+          <!-- Logo -->
+          <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+
+          <!-- Menu -->
+          <div class="classy-menu">
+
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+              <ul id="nav">
+                <li class="current-item"><a href="./index.html">Home</a></li>
+                <li><a href="#">Pages</a>
+                  <ul class="dropdown">
+                    <li><a href="./index.html">- Home</a></li>
+                    <li><a href="./podcast.html">- Podcast</a></li>
+                    <li><a href="./single-podcast.html">- Single Podcast</a></li>
+                    <li><a href="./about.html">- About Us</a></li>
+                    <li><a href="./blog.html">- Blog</a></li>
+                    <li><a href="./single-blog.html">- Blog Details</a></li>
+                    <li><a href="./contact.html">- Contact</a></li>
+                    <li><a href="#">- Dropdown</a>
+                      <ul class="dropdown">
+                        <li><a href="#">- Dropdown Item</a></li>
+                        <li><a href="#">- Dropdown Item</a>
+                          <ul class="dropdown">
+                            <li><a href="#">- Even Dropdown</a></li>
+                            <li><a href="#">- Even Dropdown</a></li>
+                            <li><a href="#">- Even Dropdown</a></li>
+                            <li><a href="#">- Even Dropdown</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">- Dropdown Item</a></li>
+                        <li><a href="#">- Dropdown Item</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="./podcast.html">Podcasts</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Blog</a>
+                  <ul class="dropdown">
+                    <li><a href="./blog.html">- Blog</a></li>
+                    <li><a href="./single-blog.html">- Blog Details</a></li>
+                  </ul>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+
+              <!-- Top Search Area -->
+              <div class="top-search-area">
+                <form action="index.html" method="post">
+                  <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
+                  <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+              </div>
+
+              <!-- Top Social Area -->
+              <div class="top-social-area">
+                <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                <a href="#" class="fa fa-pinterest" aria-hidden="true"></a>
+                <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+                <a href="#" class="fa fa-youtube-play" aria-hidden="true"></a>
+              </div>
+
+            </div>
+            <!-- Nav End -->
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area single-podcast-breadcumb bg-img bg-overlay" style="background-image: url(img/bg-img/2.jpg);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <!-- Music Area -->
+          <div class="poca-music-area style-2 bg-transparent mb-0">
+            <div class="poca-music-content text-center">
+              <span class="music-published-date mb-2">December 9, 2018</span>
+              <h2 class="text-white">Episode 201 - You Don’t Know Squat!</h2>
+              <div class="music-meta-data">
+                <p class="text-white">By <a href="#" class="music-author text-white">Admin</a> | <a href="#" class="music-catagory  text-white">Tutorials</a> | <a href="#" class="music-duration  text-white">00:02:56</a></p>
+              </div>
+              <!-- Music Player -->
+              <div class="poca-music-player style-2">
+                <audio preload="auto" controls>
+                  <source src="audio/dummy-audio.mp3">
+                </audio>
+              </div>
+              <!-- Likes, Share & Download -->
+              <div class="likes-share-download d-flex align-items-center justify-content-between">
+                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Like (29)</a>
+                <div>
+                  <a href="#" class="mr-4"><i class="fa fa-share-alt" aria-hidden="true"></i> Share(04)</a>
+                  <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download (12)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <!-- Popper js -->
+  <script src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- All js -->
+  <script src="assets/js/poca.bundle.js"></script>
+  <!-- Active js -->
+  <script src="assets/js/active.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"> </script>
+  <script type="text/javascript" src="assets/js/dirPagination.js"></script>
+
+</body>
+
+</html>
