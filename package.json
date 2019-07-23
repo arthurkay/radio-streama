@@ -4,6 +4,7 @@
   "description": "Cloud Based radio streaming service",
   "main": "Server.js",
   "scripts": {
+    "start": "node Server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
