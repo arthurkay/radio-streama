@@ -12,8 +12,23 @@ To run this application, make sure you have nodejs already installed.
 After installation of NodeJs, head over to the path of this app, e.g.
 
 ```bash
-cd /path/where/app/is/located/radio=-streama
+cd /path/where/app/is/located/radio-streama
 npm install
+```
+
+Also make sure you have a `.env` file that contains the port number you want the app to listen on.
+This can be done by creating `.env` in your working directory.
+
+```bash
+cd /path/where/app/is/located/radio-streama
+touch .env
+```
+
+And adding the following to the file:
+
+```.env
+# .env file
+PORT=8989
 ```
 
 That will install all required node modules for the application to run.
