@@ -42,7 +42,7 @@ cd /path/to/where/the/app/is/located/radio-streama
 npm run start
 ```
 
-*NOTE:* This is a streaming app, so you'll need an internet connection to use the app or you'll only be able to see a screen such as below (without radio stations), indicating that radio stations couldn't be fetched.
+*NOTE:* This is a streaming app, so you'll need an internet connection to use the app. If all goes well you'll be able to see something like.
 
 ![Cloud Radio No Internet](public/img/core-img/Cloud-Radio.png)
 
